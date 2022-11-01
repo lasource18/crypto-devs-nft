@@ -52,7 +52,7 @@ contract CryptoDevs is ERC721Enumerable, Ownable {
     /**
       * @dev starPresale start a presale for the whitelisted addresses
      */
-     function starPresale() public onlyOwner {
+     function startPresale() public onlyOwner {
         presaleStarted = true;
         // set presale ended as current timestamp + 5 mins
         // Solidity has cool syntax for timestamps (seconds, minutes, hours, days, years)
